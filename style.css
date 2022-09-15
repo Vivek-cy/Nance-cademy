@@ -78,11 +78,12 @@ header ul li{
 li a{
     color: black;
     text-decoration: none;
+    transition: color 0.2s linear;
 }
 
 li a:hover{
     color: rgb(176, 140, 74);
-    transition: color 0.2s linear;
+    
 }
 
 /*BODY*/
@@ -149,12 +150,11 @@ li a:hover{
 .learn a{
     text-decoration: none;
     color: white;
-    
+    transition: all 0.3s ease-in-out;
 }
 .learn a:hover{
     background-color: darkslategrey;
     box-shadow: 0.2rem 0.2rem 0.4rem darkslategray;
-    transition: box-shadow 0.2s ease-in-out;
 }
 
 /*SECTION 2*/
@@ -238,9 +238,13 @@ li a:hover{
     text-decoration: none;
 }
 
+.minic1, .minic2, .minic3{
+    transition: box-shadow 0.4s linear;
+}
+
 .minic1:hover, .minic2:hover, .minic3:hover{
     box-shadow: 0.5rem 0.5rem 1rem;
-    transition: box-shadow 0.4s linear;
+
 }
 
 /*SECTION 3*/
@@ -271,7 +275,7 @@ li a:hover{
 }
 .gallery1:hover, .gallery2:hover, .gallery3:hover, .gallery4:hover, .gallery5:hover, .gallery6:hover{
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5), -1rem -1rem 2rem rgba(0, 0, 0, 0.5);
-    transition: all 0.3s linear;
+    
 
 }
 
@@ -286,34 +290,40 @@ li a:hover{
     margin-right: 2rem;
     margin-bottom: 2rem;
     width: 22rem;
+    transition: all 0.3s linear;
 }
 .gallery2{
     background-color:whitesmoke;
     margin-right: 2rem;
     margin-bottom: 2rem;
     width: 22rem;
+    transition: all 0.3s linear;
 }
 .gallery3{
     background-color:whitesmoke;
     margin-bottom: 2rem;
     width: 22rem;
+    transition: all 0.3s linear;
 }
 .gallery4{
     background-color:whitesmoke;
     margin-right: 2rem;
     margin-bottom: 2rem;
     width: 22rem;
+    transition: all 0.3s linear;
 }
 .gallery5{
     background-color: whitesmoke;
     margin-right: 2rem;
     margin-bottom: 2rem;
     width: 22rem;
+    transition: all 0.3s linear;
 }
 .gallery6{
     background-color: whitesmoke;
     margin-bottom: 2rem;
     width: 22rem;
+    transition: all 0.3s linear;
 }
 
 
@@ -381,6 +391,11 @@ video{
     display: flex;
 
 }
+.head1, .head2{
+    transition: box-shadow 0.3s linear;
+}
+
+
 .head1:hover, .head2:hover{
     box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
@@ -414,5 +429,27 @@ footer .p{
 footer a{
     text-decoration: none;
 }
+
+
+/*FOR MOBILE PHONES*/
+
+@media only screen and (min-width: 320px) and (max-width: 600px){
+    header h2, p{
+        display: none;
+    }
+    header ul{
+        display: none;
+    }
+    .jumbotron img{
+        
+
+    }
+
+}
+    
+
+
+
+
 
 /*THIS IS VIVEK MANDAVA'S CODE*/
